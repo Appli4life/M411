@@ -1,6 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using ArrayListSimple;
 
 namespace ArrayListSimple.Test
 {
