@@ -13,7 +13,7 @@ namespace ArrayListSimple.Test
 
             ALS.Add(z);
 
-            Assert.AreEqual(3, ALS.GetAt(0));
+            Assert.AreEqual(3,ALS.GetAt(0));
 
         }
 
