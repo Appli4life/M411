@@ -15,7 +15,7 @@ namespace HA
             {
                 List<Person> people = new List<Person>();
 
-                foreach (string line in File.ReadAllLines(fileName, System.Text.Encoding.UTF7))
+                foreach (string line in File.ReadAllLines(fileName, Encoding.UTF8))
                 {
                     string[] parts = line.Split(';');
 

@@ -104,7 +104,7 @@ namespace T1
         /// <summary>
         /// Summe der Rundenzahlen
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Summe</returns>
         public double GetSum()
         {
             double s = 0;

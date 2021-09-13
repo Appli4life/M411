@@ -15,7 +15,9 @@ namespace HA
 
         public void PrintList(ref List<Person> people)
         {
-            var sortetList = people.OrderBy(o => o.Geburtsjahr).ToList();
+            // Referenz auf die Liste erstellen, die Sortiert ist nach Geburtsjahr
+            // (Andere Referenz wird von C# automatisch gelöscht, wenn sie nicht mehr gebraucht wird)
+            var sortetList = people.OrderByDescending(o => o.Geburtsjahr).ToList();
 
             foreach (var person in sortetList)
             {

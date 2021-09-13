@@ -46,6 +46,7 @@
     <Compile Include="CsvReader.cs" />
     <Compile Include="ConsoleOutput.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="PersonenVerwaltung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
