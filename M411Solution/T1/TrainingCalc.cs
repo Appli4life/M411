@@ -15,7 +15,7 @@ namespace T1
         /// <summary>
         /// Zähler
         /// </summary>
-        public int Count { get; set; } = 0;
+        public int Count { get; private set; } = 0;
 
         /// <summary>
         /// Hinzufügen
