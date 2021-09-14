@@ -20,6 +20,9 @@ namespace HA
             Nachname = nachname;
             Geburtsjahr = geburtsjahr;
         }
-
+        public override string ToString()
+        {
+            return $"Vorname:{Vorname}, Nachname: {Nachname}, Geb. Jahr: {Geburtsjahr}";
+        }
     }
 }

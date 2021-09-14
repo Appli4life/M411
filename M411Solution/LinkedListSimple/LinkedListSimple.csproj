@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86F29B66-617D-4677-9BFD-BAB2D317F0B1}</ProjectGuid>
+    <ProjectGuid>{A36CD0B4-5BFD-467E-8DBB-6C4A22F22BE3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HA</RootNamespace>
-    <AssemblyName>HA</AssemblyName>
+    <RootNamespace>LinkedListSimple</RootNamespace>
+    <AssemblyName>LinkedListSimple</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CsvReader.cs" />
-    <Compile Include="ConsoleOutput.cs" />
-    <Compile Include="CsvWriter.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="LinkedList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Resource Include="daten.csv" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LinkedListSimple\LinkedListSimple.csproj">
-      <Project>{a36cd0b4-5bfd-467e-8dbb-6c4a22f22be3}</Project>
-      <Name>LinkedListSimple</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,11 +9,11 @@ namespace HA
 {
     public class CsvReader
     {
-        public List<Person> Load(string fileName)
+        public LinkedListSimple.LinkedList<Person> Load(string fileName)
         {
             if (File.Exists(fileName))
             {
-                List<Person> people = new List<Person>();
+                LinkedListSimple.LinkedList<Person> people = new LinkedListSimple.LinkedList<Person>();
 
                 foreach (string line in File.ReadAllLines(fileName, Encoding.UTF7))
                 {
