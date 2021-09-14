@@ -4,10 +4,15 @@ namespace LinkedListSimple
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             try
             {
+               
+                Console.WriteLine(Rekursion(3));
+
+                Console.ReadKey();
+
                 LinkedList<string> mylist = new LinkedList<string>();
 
                 mylist.Clear();
@@ -29,6 +34,15 @@ namespace LinkedListSimple
 
             Console.ReadLine();
 
+        }
+        public static ulong Rekursion(ulong n)
+        {
+            if (n > 1)
+            {
+                return n * Rekursion(n - 1);
+            }
+
+            return 1;
         }
     }
 }
