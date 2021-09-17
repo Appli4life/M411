@@ -9,15 +9,15 @@ namespace ArrayList
     {
         static void Main(string[] args)
         {
-            var list = new ArrayList<Object>();
+            var list = new ArrayList<string>();
 
             list.Add("Muster");
             list.Add("Müller");
             list.Add("Schmidt");
-            list.Add("Schulze");
+            
             
 
-            for (int i = 0; i < list.Count; i++)
+            for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine(list[i]);
             }
