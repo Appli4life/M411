@@ -70,7 +70,6 @@ namespace LinkedListSimple
         /// <returns>Vorhanden(true), Nicht Vorhanden(false)</returns>
         public bool Contains(T item)
         {
-           
             if (this.Find(item) != null)
             {
                 return true;
@@ -104,6 +103,10 @@ namespace LinkedListSimple
             {
                 if (item.Equals(curr.Next.Item))
                 {
+                    if(curr.Next == last)
+                    {
+                        last = curr;
+                    }
                     curr.Next = curr.Next.Next;
                     Count--;
                     return true;
